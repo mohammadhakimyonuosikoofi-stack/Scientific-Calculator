@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101827">
+    <title>Professional Scientific Calculator</title>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b1220">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="calculator">
+
+        <header class="header">
+            <div>
+                <h1>Calculator</h1>
+                <p>Scientific Calculator</p>
+            </div>
+
+            <button id="themeBtn" class="theme-btn">☀</button>
+        </header>
+
+        <section class="display">
+            <div id="expression" class="expression">0</div>
+            <div id="result" class="result">0</div>
+        </section>
+
+        <div class="top-tools">
+            <button id="modeBtn">DEG</button>
+            <button id="historyBtn">History</button>
+            <button id="copyBtn">Copy</button>
+        </div>
+
+        <section class="buttons">
+
+            <button class="function" data-value="sin(">sin</button>
+            <button class="function" data-value="cos(">cos</button>
+            <button class="function" data-value="tan(">tan</button>
+            <button class="function" data-value="log(">log</button>
+            <button class="function" data-value="ln(">ln</button>
+
+            <button class="function" data-value="(">(</button>
+            <button class="function" data-value=")">)</button>
+            <button class="function" data-value="π">π</button>
+            <button class="function" data-value="e">e</button>
+            <button class="function" data-value="!">x!</button>
+
+            <button class="danger" id="clearBtn">AC</button>
+            <button class="danger" id="deleteBtn">DEL</button>
+            <button class="operator" data-value="%">%</button>
+            <button class="operator" data-value="÷">÷</button>
+            <button class="function" data-value="√(">√</button>
+
+            <button class="function" data-value="x²">x²</button>
+            <button class="function" data-value="x³">x³</button>
+            <button class="function" data-value="^">xʸ</button>
+            <button class="operator" data-value="×">×</button>
+            <button class="operator" data-value="−">−</button>
+
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button class="operator" data-value="+">+</button>
+            <button class="function" data-value="1/">1/x</button>
+
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button data-value=".">.</button>
+            <button class="function" data-value="Ans">Ans</button>
+
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button data-value="0">0</button>
+            <button class="equal" id="calculateBtn">=</button>
+
+        </section>
+
+        <section class="history-panel" id="historyPanel" hidden>
+            <h2>Calculation History</h2>
+            <button id="clearHistoryBtn">Clear History</button>
+            <div id="historyList"></div>
+        </section>
+
+        <footer>
+            <p>Professional Scientific Calculator</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
